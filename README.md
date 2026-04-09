@@ -25,14 +25,3 @@ Luego abre: `http://localhost:8000`
     2.  **JWT (JSON Web Tokens):** Implementar tokens firmados por un servidor para gestionar sesiones de forma segura.
     3.  **HTTPS:** Obligatorio para cifrar la comunicación entre cliente y servidor.
 
----
-
-### 5. Checklist de Validación Final
-
-- [x] El archivo `.gitignore` excluye archivos ocultos del sistema.
-- [x] Los enlaces entre páginas son relativos y funcionan en el servidor.
-- [x] La consola del navegador está limpia de `console.log` de desarrollo.
-- [x] El diseño es *Responsive* en al menos 3 breakpoints (Mobile, Tablet, Desktop).
-- [x] Los comandos de Git se ejecutaron sin conflictos.
-
-**Estado del Proyecto:** 🟢 **Aprobado para Entrega.**
