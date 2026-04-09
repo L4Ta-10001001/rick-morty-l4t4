@@ -6,7 +6,7 @@
 * **Data Source:** [Rick & Morty API](https://rickandmortyapi.com/)
 
 ### Arquitectura
-El proyecto implementa una **Estructura Plana**. Esto garantiza la máxima compatibilidad en entornos de hosting estáticos (Vercel/Netlify), eliminando errores comunes de rutas relativas (`../`) al mover archivos.
+El proyecto implementa una **Estructura Plana**. Esto garantiza la máxima compatibilidad en entornos de hosting estáticos [Vercel](https://rick-morty-l4t4.vercel.app), eliminando errores comunes de rutas relativas (`../`) al mover archivos.
 * **Filtrado en Memoria:** Para optimizar la experiencia de usuario, una vez obtenidos los datos de la API, las búsquedas se realizan sobre el array en memoria, proporcionando resultados instantáneos sin latencia de red adicional.
 
 ### Ejecución Local
