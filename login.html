@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Rick & Morty L4T4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2
+          style="
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+          "
+        >
+          L4T4 Portal
+        </h2>
+        <form id="loginForm">
+          <p id="errorMsg" class="error-msg">Credenciales incorrectas.</p>
+          <input
+            type="text"
+            id="username"
+            placeholder="Usuario (admin)"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Contraseña (1234)"
+            required
+          />
+          <button type="submit" style="width: 100%; margin-top: 10px">
+            Ingresar al Multiverso
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

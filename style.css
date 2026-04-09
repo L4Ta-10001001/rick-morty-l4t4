@@ -1,0 +1,175 @@
+:root {
+  --bg-color: #121212;
+  --surface-color: #1e1e1e;
+  --primary-color: #97ce4c;
+  --text-color: #e0e0e0;
+  --text-muted: #9e9e9e;
+  --danger-color: #ff5252;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navegación y Cabeceras */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+header h1 {
+  color: var(--primary-color);
+}
+button {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: 0.2s;
+}
+button:hover {
+  filter: brightness(1.1);
+}
+button.btn-danger {
+  background: var(--danger-color);
+  color: white;
+}
+
+/* Formularios y Buscador */
+.form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: white;
+  border-radius: var(--radius);
+}
+input:focus {
+  outline: 1px solid var(--primary-color);
+}
+.error-msg {
+  color: var(--danger-color);
+  font-size: 0.9em;
+  display: none;
+  margin-bottom: 10px;
+}
+
+/* Grid de Personajes */
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: var(--surface-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.2s;
+  display: block;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 15px;
+}
+.card-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* Vista Detalle */
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .detail-card {
+    flex-direction: row;
+  }
+}
+.detail-card img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+.detail-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detail-info h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.detail-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.status-Alive {
+  background: var(--primary-color);
+}
+.status-Dead {
+  background: var(--danger-color);
+}
+.status-unknown {
+  background: var(--text-muted);
+}
