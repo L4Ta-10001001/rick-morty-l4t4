@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const user = document.getElementById("username").value.trim();
     const pass = document.getElementById("password").value.trim();
 
-    if (user === "admin" && pass === "tes") {
+    if (user === "admin" && pass === "1234") {
       localStorage.setItem("l4t4_session", "active");
       window.location.href = "index.html";
     } else {
