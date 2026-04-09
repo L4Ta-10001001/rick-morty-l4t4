@@ -1,4 +1,6 @@
 # Proyecto Rick & Morty - L4T4
+Usuario: Admin
+Password: tes
 
 ### Stack Tecnológico
 * **Lenguaje:** Vanilla JavaScript (ES6+)
